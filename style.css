@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /*height: 100%;
+    width: 100%;*/
+    background-color: hsl(185, 75%, 39%);
+    overflow-x: hidden;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.card-bx{
+    height: 370px;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+}
+.bg1{
+    background: url("images/bg-pattern-top.svg");
+    background-size: 100%;
+    height: 80vw;
+    width: 80vw;
+    position: absolute;
+    left: -30vw;
+    top: -45vw;
+}
+.bg2{
+    background: url("images/bg-pattern-top.svg");
+    background-size: 100%;
+    height: 62vw;
+    width: 62vw;
+    position: absolute;
+    right: -10vw;
+    top: 32vw;
+}
+.img1{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.stats, .stats2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kumbh Sans";
+}
+.stats > b,
+.stats2 > p{
+    margin: 0px 35px;
+    
+}
+.stats2 > p{
+    font-size: 10px;
+    margin-top: 5px;
+    opacity: 70%;
+}
+.stats{
+    margin-top: 25px;
+}
+#tx1,
+#tx2{
+    position: relative;
+    left: -7px;
+}
+.img2{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+    top: -55px;
+    left: 125px;
+}
+.card-bx > b{
+    position: relative;
+    top: -20px;
+    left: 11px;
+    font-family: "Kumbh Sans";
+}
+#nmbr{
+    position: relative;
+    top: -40px;
+    left: 220px;
+    font-family: "Kumbh Sans";
+    opacity: 70%;
+}
+#location{
+    position: relative;
+    top: -30px;
+    left: 153px;
+    font-family: "Kumbh Sans";
+    font-size: 13px;
+    opacity: 70%;
+}
+@media screen and (min-device-width:300px) and (max-device-width:399px){
+    *{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    .bg1{
+        top: -30vw;
+    }
+    .bg2{
+        top: 105vw;
+        left: 50vw;
+        height: 130vw;
+        width: 130vw;
+        background-repeat: no-repeat;
+        rotate: -90deg;
+    }
+}
+@media screen and (min-device-width:400px) and (max-device-width:499px){
+    *{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    .bg1{
+        top: -30vw;
+    }
+    .bg2{
+        top: 105vw;
+        left: 50vw;
+        height: 130vw;
+        width: 130vw;
+        background-repeat: no-repeat;
+        rotate: -90deg;
+    }
+    .card-bx{
+        position: relative;
+        top: -20vw;
+    }
+}
